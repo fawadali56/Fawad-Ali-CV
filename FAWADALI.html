@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fawad Ali | Mechanical Engineer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 32px; }
+    header p { margin: 8px 0; }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    h2 {
+      color: #0f172a;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .skills span {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .toggle {
+      cursor: pointer;
+      color: #2563eb;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Fawad Ali</h1>
+  <p>Mechanical Engineer</p>
+  <p>📞 +92-316-3522246 | ✉️ 04.fawadali@gmail.com</p>
+  <p>📍 Charsadda Chowk, Mardan, KPK</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Profile</h2>
+    <p>
+      Mechanical Engineering student with strong practical and academic background. 
+      Experienced in CAD tools, programming, and embedded systems. Passionate about 
+      innovation, teamwork, and applying engineering principles to real-world solutions.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2 class="toggle" onclick="toggleSection('skills')">Skills (click to toggle)</h2>
+    <div id="skills" class="skills">
+      <span>AutoCAD</span>
+      <span>SolidWorks</span>
+      <span>COMSOL Multiphysics</span>
+      <span>Arduino IDE</span>
+      <span>C Programming</span>
+      <span>LabVIEW (VI)</span>
+      <span>Electronic Workbench</span>
+      <span>Equation Solver</span>
+      <span>MS Word</span>
+      <span>MS Excel</span>
+      <span>MS PowerPoint</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Education</h2>
+    <ul>
+      <li><b>UET Mardan</b> — BSc Mechanical Engineering <br> <i>Oct 2022 – Present</i></li>
+      <li><b>Government College Peshawar</b> — Pre-Engineering <br> <i>Sep 2020 – Jul 2022</i> | Marks: 911/1100</li>
+      <li><b>Al Qasim Public High School</b> — Science <br> <i>Mar 2018 – Jun 2020</i> | Marks: 934/1100</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Internship</h2>
+    <ul>
+      <li>
+        <b>Mechanical Engineering Intern</b><br>
+        <b>Pakistan Locomotive Industry, Risalpur</b> — <i>6 Weeks</i><br>
+        Completed a six-week hands-on internship focused on locomotive manufacturing, maintenance, and mechanical systems. 
+        Gained practical exposure to diesel-electric locomotives, including engine components, braking systems, bogies, 
+        suspension, and power transmission mechanisms. Assisted engineers in routine inspections, basic troubleshooting, 
+        and workshop operations. Developed understanding of industrial safety standards, engineering documentation, 
+        teamwork, and real-world mechanical problem-solving in a heavy manufacturing environment.
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 class="toggle" onclick="toggleSection('projects')">Projects (click to toggle)</h2>
+    <div id="projects">
+      <ul>
+        <li>
+          <b>Voice-Controlled Wheelchair (Current Project)</b><br>
+          Designed and developed a voice-controlled wheelchair using Arduino.
+          Integrated voice commands for motion control to assist physically challenged individuals.
+          Focused on safety, responsiveness, and user-friendly operation.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>References</h2>
+    <p>
+      <b>Engr. Abdul Sammad Saleem</b> — Lecturer <br>
+      📞 +92-335-1677894
+    </p>
+    <p>
+      <b>Engr. Abdul Hameed</b> — Lab Engineer <br>
+      📞 +92-304-0062756
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Fawad Ali | Interactive CV
+</footer>
+
+</body>
+</html>
